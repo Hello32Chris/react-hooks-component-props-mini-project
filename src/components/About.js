@@ -1,15 +1,13 @@
 import React from "react";
 
-function About( { blogData } ) {
+function About({ about, image = "https://via.placeholder.com/215" }) {
 
     return (
-        <div>
-            <aside>
-                <img src={blogData.image || "https://via.placeholder.com/215"} alt={"blog logo"} title={"blog logo"} />
-                <p>{blogData.about}</p>
-            </aside>
-        </div>
-    )
+        <aside>
+            <img src={image} alt="blog logo" title="blog logo" />
+            <p>{about}</p>
+        </aside>
+    );
 }
 
 export default About;

@@ -1,10 +1,10 @@
 import React from "react";
 
-function Header( { blogName } ) {
+function Header( { name } ) {
 
     return (
         <header>
-            <h1>{blogName}</h1>
+            <h1>{name}</h1>
         </header>
     )
 }
